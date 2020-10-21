@@ -1,33 +1,51 @@
-body{
-background: url("../images/gymimage1.jpg")
-    no-repeat center center fixed;
+body {
+    background: url("../images/gymimage1.jpg") no-repeat center center fixed;
     background-size: cover;
     opacity: 0.6;
+    background-color: rgba(212, 152, 23, 0.226);
 }
-div{
-    font-family: 'Anton', sans-serif;
+
+div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: orangered;
-    width: 60%;
+    width: 50%;
+    margin-top: 10% !important;
+    margin-bottom: 0% !important;
     margin: 350px auto;
     text-align: center;
-    border-radius: 25px;
-    
-    
-} 
-button{
-    background-color: black;
+    border-radius: 50px;
+
+
+}
+
+button {
+    background-color: rgba(212, 21, 21, 0.76);
     border-radius: 25px;
     padding: 10px;
-    color: white;
-    
-    
+    color: rgb(230, 201, 201);
+
+
 }
-i{
+
+i {
     color: white;
     opacity: 100;
-        
+
 }
 
+.container {
+    width: 50%;
+    color: rgb(0, 0, 0) !important;
+    height: 50%;
+    border-radius: 2%;
+    background-color: rgba(238, 11, 11, 0.993);
+}
 
-
-
+#main-footer {
+    background: rgb(33, 18, 18);
+    text-align: center;
+    padding: 20px;
+    margin-top: 9.4%;
+    color: rgb(151, 100, 5);
+    font-size: larger;
+}
