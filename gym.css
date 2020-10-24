@@ -1,51 +1,116 @@
-body {
-    background: url("../images/gymimage1.jpg") no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0.6;
-    background-color: rgba(212, 152, 23, 0.226);
+/* recrafted by IrwanPhan 201024 2hsw */
+
+* {
+    box-sizing: border-box;
 }
 
-div {
+body {
+    background-color: #685588;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    color: #f0f8ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: orangered;
-    width: 50%;
-    margin-top: 10% !important;
-    margin-bottom: 0% !important;
-    margin: 350px auto;
+}
+
+.welcome-container {
+    width: 100%;
+    display: block;
     text-align: center;
-    border-radius: 50px;
-
-
+    padding-top: 120px;
+}
+.welcome-container p{
+    font-size: 24px;
+}
+i {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+i.fitness-icon {
+    font-size: 60px;
+    display: block;
+    width: 120px;
+    height: 120px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0 auto -12px;
+    background-color: rgba(33, 18, 18, 0.6);
+    border-radius: 50%;
+    border: 8px solid #f0f8ff;
+}
+h1.title {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.75em 2em;
+    background-color: rgba(33, 18, 18, 0.6);
+    border-radius: 1em;
+    border: 4px solid #f0f8ff;
 }
 
 button {
-    background-color: rgba(212, 21, 21, 0.76);
+    background-color: #dc143c;
+    border: 0;
+    border: 4px solid #f0f8ff;
     border-radius: 25px;
-    padding: 10px;
-    color: rgb(230, 201, 201);
-
-
+    padding: 12px;
+    color: #ffe4e1;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 48px auto;
+}
+button:hover {
+    background-color: #bc041c;
 }
 
-i {
-    color: white;
-    opacity: 100;
-
+.gym-intro {
+    background-color: #ffc480;
+    color: #123432;
+    display: inline-block;
+    padding: 0.75em 1.5em;
 }
 
-.container {
-    width: 50%;
-    color: rgb(0, 0, 0) !important;
-    height: 50%;
-    border-radius: 2%;
-    background-color: rgba(238, 11, 11, 0.993);
-}
-
-#main-footer {
+footer#main-footer {
+    position: absolute;
     background: rgb(33, 18, 18);
     text-align: center;
     padding: 20px;
-    margin-top: 9.4%;
     color: rgb(151, 100, 5);
-    font-size: larger;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    z-index: 3;
+    font-weight: 600;
+}
+
+.gym-image {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+}
+.gym-image.clipped {
+    clip-path: polygon(0% 0%, 100% 0%, 60% 100%, 100% 100%, 0% 0%, 100% 100%, 0% 40%);
+    z-index: -1;
+    left: -150px;
+}
+.gym-image.clipped img{
+    height: 100%;
+}
+.gym-image.blurred {
+    filter: blur(8px);
+    z-index: -2;
+    opacity: 0.5;
+}
+.gym-image.blurred img{
+    width: 100%;
 }
